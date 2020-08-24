@@ -7,6 +7,9 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("../checked")
+require("../memo")　
+// 　require("<該当ファイルをパスで指定>でファイルの読み込み")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
