@@ -6,8 +6,9 @@ class PostsController < ApplicationController
  
 
   def create
-    Post.create(content: params[:content]) #contentがテーブルのカラム名、params[:content]はparamsとして送られてきたデータ
-    redirect_to action: :index
+   
+    post = Post.create(content: params[:content], checked: false)
+    render json:{ post: post }
   end
 
   def checked
